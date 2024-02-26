@@ -1,0 +1,20 @@
+// базовые подключенияnpm install chart.js
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// подключения компонентов страницы
+@import "./components/header";
+@import "./components/hero";
+@import "./components/facts";
+@import "./components/contacts";
+@import "./components/reliability";
+
+@import "./components/price";
+@import "./components/revenue";
+@import "./components/bidding";
+@import "./components/founders";
+@import "./components/seo";
+@import "./components/footer";
+@import "./components/menu";

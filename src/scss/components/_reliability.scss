@@ -1,0 +1,114 @@
+.reliability {
+  margin-bottom: 80px;
+
+  @include mobile {
+    margin-bottom: 40px;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    padding: 42px;
+    border-radius: 20px;
+    background-color: #fcfcfc;
+    gap: 30px;
+
+    @include small-tablet {
+      flex-direction: column;
+      padding: 40px 0;
+      gap: 10px;
+
+    }
+
+  }
+
+  &__box {
+    padding: 30px;
+    height: 246px;
+    max-width: 498px;
+    width: 100%;
+    border: 1px solid #e7e7e7;
+    border-radius: 20px;
+    background-color: #fff;
+
+    @include mobile {
+      padding: 18px;
+      height: auto;
+    }
+  }
+
+  &__btn {
+    display: inline-block;
+    margin-bottom: 28px;
+    padding: 10px 23px;
+    border-radius: 10px;
+    background-color: var(--accent);
+    font-family: var(--third-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #fff;
+
+    @include mobile {
+      font-size: 14px;
+      padding: 8px 18px;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__item {
+    position: relative;
+    padding-left: 20px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 122%;
+    color: #444;
+
+    &::before {
+      content: '';
+      position: absolute;
+      border-radius: 50%;
+      left: 0;
+      top: 7px;
+      width: 8px;
+      height: 8px;
+      background-color: var(--accent);
+
+      @include mobile {
+
+        top: 7px;
+        width: 6px;
+        height: 6px;
+      }
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 18px;
+
+      @include mobile {
+        margin-bottom: 6px;
+        padding-left: 18px;
+      }
+
+    }
+
+    @include mobile {
+      font-size: 12px;
+      line-height: 183%;
+    }
+  }
+
+  &__title {
+    padding-left: 60px;
+    margin-bottom: 36px;
+
+    &::before {
+      left: 40px;
+    }
+
+    @include mobile {
+      display: none;
+    }
+  }
+}
